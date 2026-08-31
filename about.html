@@ -1,1 +1,913 @@
-1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>About Jeweller SEO — Our SEO Expertise & Heritage</title>
+    <meta name="description" content="Learn about Jeweller SEO's approach to link building and SEO. Founded by Nadeem Mayo with 10+ years of expertise in white-hat SEO strategies." />
+    <link rel="canonical" href="https://jewellerseo.online/about.html" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%231F3A93' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='65' font-size='50' font-weight='bold' fill='%23FFD700' text-anchor='middle'%3EJS%3C/text%3E%3C/svg%3E" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="About Jeweller SEO" />
+    <meta property="og:url" content="https://jewellerseo.online/about.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GB37RK3Z13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-GB37RK3Z13');
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #0a0e27;
+            color: #e0e0e0;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        :root {
+            --primary: #1F3A93;
+            --secondary: #0D47A1;
+            --accent: #FFD700;
+            --dark: #0a0e27;
+            --white: #ffffff;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-bottom: 3px solid var(--accent);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 6px 20px rgba(31, 58, 147, 0.3);
+        }
+
+        .announcement-bar {
+            background: linear-gradient(90deg, var(--accent), #ffc700);
+            color: var(--dark);
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .logo-mark {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #ffc700);
+            color: var(--dark);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        nav {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--white);
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, var(--accent), #ffc700);
+            color: var(--dark);
+            border: none;
+            padding: 11px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--white);
+            border-radius: 3px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a2d5c 0%, #0d47a1 50%, #1a2d5c 100%);
+            padding: 100px 40px;
+            text-align: center;
+            border-bottom: 3px solid var(--accent);
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 56px;
+            color: var(--white);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .hero .highlight {
+            color: var(--accent);
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: #b0b0b0;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+
+        .section {
+            margin-bottom: 80px;
+        }
+
+        .section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: var(--white);
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .section h2 .highlight {
+            color: var(--accent);
+        }
+
+        .section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #b0b0b0;
+            margin-bottom: 20px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .content-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, var(--accent), #ffc700);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .founder-card {
+            background: linear-gradient(135deg, #1a2d5c, #0d47a1);
+            color: var(--white);
+            padding: 50px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+            border: 1px solid rgba(255, 215, 0, 0.1);
+        }
+
+        .founder-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), #ffc700);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            margin: 0 auto 20px;
+            border: 4px solid var(--accent);
+        }
+
+        .founder-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .founder-card .title {
+            color: var(--accent);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .founder-card .bio {
+            color: #b0b0b0;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--accent);
+        }
+
+        .social-links a:hover {
+            background: var(--accent);
+            color: var(--dark);
+            transform: translateY(-3px);
+        }
+
+        /* Values Grid */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .value-item {
+            text-align: center;
+            padding: 35px;
+            background: linear-gradient(135deg, #1a2d5c, #0d47a1);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .value-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+            border-color: var(--accent);
+        }
+
+        .value-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: var(--accent);
+        }
+
+        .value-item h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            color: var(--white);
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .value-item p {
+            margin: 0;
+            font-size: 13px;
+            color: #b0b0b0;
+        }
+
+        /* Timeline */
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .timeline-item {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .timeline-year {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .timeline-item p {
+            color: #b0b0b0;
+            font-size: 13px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* CTA Box */
+        .cta-box {
+            background: linear-gradient(135deg, var(--accent), #ffc700);
+            color: var(--dark);
+            padding: 60px 40px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 60px 0;
+        }
+
+        .cta-box h2 {
+            color: var(--dark);
+            margin-bottom: 15px;
+            font-size: 40px;
+        }
+
+        .cta-box p {
+            color: #5a2b2b;
+            margin-bottom: 25px;
+            font-size: 15px;
+        }
+
+        .btn-dark {
+            background: var(--dark);
+            color: var(--accent);
+            padding: 14px 35px;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-dark:hover {
+            background: #1a1f35;
+            transform: translateY(-3px);
+        }
+
+        /* Newsletter */
+        .newsletter-section {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 60px 40px;
+            background: linear-gradient(135deg, var(--accent), #ffc700);
+            color: var(--dark);
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .newsletter-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: var(--dark);
+        }
+
+        .newsletter-section p {
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #5a2b2b;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 13px 18px;
+            border: none;
+            border-radius: 5px;
+            font-size: 13px;
+            background: var(--white);
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .newsletter-form button {
+            padding: 13px 30px;
+            background: var(--dark);
+            color: var(--accent);
+            border: none;
+            cursor: pointer;
+            font-weight: 700;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-size: 11px;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            background: #1a1f35;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 60px 40px 20px;
+            border-top: 2px solid var(--accent);
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+        }
+
+        .footer-section h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: #b0b0b0;
+            text-decoration: none;
+            font-size: 13px;
+            line-height: 2;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent);
+        }
+
+        .footer-section p {
+            font-size: 13px;
+            line-height: 1.8;
+            color: #b0b0b0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            color: #707070;
+            font-size: 12px;
+            padding-top: 20px;
+        }
+
+        .footer-bottom a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* Floating Contact */
+        .floating-contact {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            z-index: 99;
+        }
+
+        .contact-options {
+            display: none;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 15px;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .floating-contact:hover .contact-options {
+            display: flex;
+        }
+
+        .float-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .float-whatsapp {
+            background: #25D366;
+        }
+
+        .float-email {
+            background: #FF6B6B;
+        }
+
+        .float-linkedin {
+            background: #0077B5;
+        }
+
+        .float-facebook {
+            background: #1877F2;
+        }
+
+        .float-main {
+            background: linear-gradient(135deg, var(--accent), #ffc700);
+            color: var(--dark);
+            width: 65px;
+            height: 65px;
+            font-size: 24px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="announcement-bar">
+            ⭐ PREMIUM LINK BUILDING • GUEST POSTING • WHITE-HAT SEO ⭐
+        </div>
+        <div class="header-container">
+            <div style="display: flex; align-items: center;">
+                <div class="logo-mark">JS</div>
+                <div class="logo">Jeweller<span>SEO</span></div>
+            </div>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="services.html">SERVICES</a>
+                <a href="blog.html">BLOG</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <a href="https://wa.me/923074646927" class="cta-btn">GET STARTED</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>About <span class="highlight">Jeweller SEO</span></h1>
+        <p>10+ years of expertise in white-hat link building and sustainable SEO growth for agencies worldwide.</p>
+    </section>
+
+    <div class="container">
+        <!-- Our Story -->
+        <section class="section">
+            <div class="content-grid">
+                <div>
+                    <h2>Our <span class="highlight">Story</span></h2>
+                    <p>Jeweller SEO was founded with a simple mission: deliver premium, white-hat link building services that drive sustainable rankings. What started as a solo operation has grown into a trusted partner for 50+ agencies globally.</p>
+                    <p>Our approach focuses on quality over quantity. Every backlink is carefully vetted, every guest post is contextually relevant, and every strategy is built for long-term success.</p>
+                    <p>We believe in transparency, accountability, and delivering measurable results. Your growth is our mission.</p>
+                </div>
+                <div class="content-image">
+                    <i class="fas fa-chart-line" style="color: var(--dark);"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founder -->
+        <section class="section">
+            <h2 style="text-align: center; margin-bottom: 40px;">Meet Our <span class="highlight">Founder</span></h2>
+            <div class="founder-card">
+                <div class="founder-image">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Nadeem Mayo</h3>
+                <div class="title">CEO & Founder</div>
+                <p class="bio">With 10+ years in SEO and link building, Nadeem has helped countless agencies achieve their ranking goals. His focus on white-hat strategies and transparent reporting has earned the trust of clients worldwide.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/Nadeem_seo" target="_blank" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://t.me/Nadeemmayos" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Approach -->
+        <section class="section">
+            <h2>Our <span class="highlight">Approach</span></h2>
+            <p>We follow strict white-hat guidelines because shortcuts don't build lasting results. Our process:</p>
+            <div class="values-grid">
+                <div class="value-item">
+                    <div class="value-icon"><i class="fas fa-search"></i></div>
+                    <h3>Research</h3>
+                    <p>Deep analysis of your niche and competition to identify the best opportunities.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Outreach</h3>
+                    <p>Personalized, professional outreach to high-authority websites in your niche.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon"><i class="fas fa-pen-fancy"></i></div>
+                    <h3>Content</h3>
+                    <p>High-quality, SEO-optimized content tailored for each publication.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Reporting</h3>
+                    <p>Transparent tracking and detailed reports on every backlink delivered.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Values -->
+        <section class="section">
+            <h2>Our <span class="highlight">Values</span></h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Integrity</h3>
+                    <p>100% white-hat, ethical practices that protect your website's reputation.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Transparency</h3>
+                    <p>Clear communication and honest reporting every step of the way.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Quality</h3>
+                    <p>High-authority domains, contextual placements, and proven results.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Commitment</h3>
+                    <p>Long-term partnerships focused on your sustainable growth.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="section">
+            <h2>Our <span class="highlight">Journey</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2014</div>
+                    <p>Started as solo SEO consultant with focus on quality over quantity.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2018</div>
+                    <p>Expanded to white-label services for agencies across North America.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <p>Launched Jeweller SEO brand with 50+ active agency partnerships.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <p>Delivered 1000+ premium backlinks with 95% client retention rate.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <div class="cta-box">
+            <h2>Ready to Partner With <span style="color: var(--dark);">Jeweller SEO?</span></h2>
+            <p>Let's discuss how we can help your agency grow with premium link building services.</p>
+            <a href="https://wa.me/923074646927" class="btn-dark">START YOUR GROWTH</a>
+        </div>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <h2>Get Weekly SEO Insights</h2>
+            <p>Subscribe for link building strategies, SEO tips, and industry updates.</p>
+            <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Jeweller SEO</h4>
+                    <p>Premium link building and SEO services trusted by 50+ agencies worldwide.</p>
+                    <div class="social-links" style="display: flex; gap: 12px; margin-top: 15px;">
+                        <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/Nadeem_seo" target="_blank" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://t.me/Nadeemmayos" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.fiverr.com/nadeem_mayo" target="_blank" title="Fiverr"><i class="fab fa-fiverr"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li><a href="services.html">Link Building</a></li>
+                        <li><a href="services.html">Guest Posting</a></li>
+                        <li><a href="services.html">Niche Edits</a></li>
+                        <li><a href="services.html">Technical SEO</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>CONTACT</h4>
+                    <p><strong>Nadeem Mayo</strong><br>CEO & Founder</p>
+                    <p style="margin-top: 10px;">
+                        <a href="https://wa.me/923074646927" style="color: var(--accent);"><i class="fab fa-whatsapp"></i> +92 307 4646927</a>
+                    </p>
+                    <p>
+                        <a href="mailto:nadeemonlin@gmail.com" style="color: var(--accent);"><i class="fas fa-envelope"></i> nadeemonlin@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2026 Jeweller SEO. All Rights Reserved. | <a href="privacy-policy.html">Privacy</a> | <a href="terms.html">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact -->
+    <div class="floating-contact">
+        <div class="contact-options">
+            <a href="https://wa.me/923074646927" class="float-btn float-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:nadeemonlin@gmail.com" class="float-btn float-email" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" class="float-btn float-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" class="float-btn float-facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <button class="float-btn float-main" title="Contact Options">
+            <i class="fas fa-comments"></i>
+        </button>
+    </div>
+
+    <script>
+        function handleNewsletter(e) {
+            e.preventDefault();
+            alert('Thank you for subscribing! You will receive SEO tips weekly.');
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>

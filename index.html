@@ -397,8 +397,13 @@
         }
 
         .service-icon {
-            font-size: 48px;
+            font-size: 40px;
             margin-bottom: 20px;
+            color: var(--accent);
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .service-card h3 {
@@ -616,11 +621,12 @@
             display: flex;
             gap: 12px;
             margin-top: 15px;
+            flex-wrap: wrap;
         }
 
         .social-links a {
-            width: 38px;
-            height: 38px;
+            width: 40px;
+            height: 40px;
             background: var(--primary);
             border-radius: 5px;
             display: flex;
@@ -628,7 +634,7 @@
             justify-content: center;
             color: var(--accent);
             text-decoration: none;
-            font-size: 14px;
+            font-size: 16px;
             transition: all 0.3s ease;
             border: 1px solid var(--accent);
         }
@@ -636,6 +642,7 @@
         .social-links a:hover {
             background: var(--accent);
             color: var(--dark);
+            transform: translateY(-3px);
         }
 
         .footer-bottom {
@@ -650,48 +657,79 @@
             text-decoration: none;
         }
 
-        /* Floating Buttons */
-        .floating-buttons {
+        /* Floating Contact Menu */
+        .floating-contact {
             position: fixed;
             right: 30px;
             bottom: 30px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
             z-index: 99;
         }
 
+        .contact-options {
+            display: none;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 15px;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .floating-contact:hover .contact-options {
+            display: flex;
+        }
+
         .float-btn {
-            width: 60px;
-            height: 60px;
+            width: 55px;
+            height: 55px;
             border-radius: 5px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--white);
             text-decoration: none;
-            font-size: 24px;
+            font-size: 20px;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.6);
         }
 
         .float-whatsapp {
             background: #25D366;
         }
 
-        .float-whatsapp:hover {
-            transform: scale(1.12);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
-        }
-
         .float-email {
-            background: var(--accent);
-            color: var(--dark);
+            background: #FF6B6B;
         }
 
-        .float-email:hover {
-            transform: scale(1.12);
-            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+        .float-linkedin {
+            background: #0077B5;
+        }
+
+        .float-facebook {
+            background: #1877F2;
+        }
+
+        .float-main {
+            background: linear-gradient(135deg, var(--accent), #ffc700);
+            color: var(--dark);
+            width: 65px;
+            height: 65px;
+            font-size: 24px;
         }
 
         /* Responsive */
@@ -813,37 +851,37 @@
         </div>
         <div class="services-grid">
             <div class="service-card">
-                <div class="service-icon">🔗</div>
+                <div class="service-icon"><i class="fas fa-link"></i></div>
                 <h3>Link Building</h3>
                 <p>Quality backlinks from DA50+ domains. White-hat, sustainable growth for your search rankings.</p>
             </div>
 
             <div class="service-card">
-                <div class="service-icon">📝</div>
+                <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
                 <h3>Guest Posting</h3>
                 <p>High-authority guest post placements. Get your content published on relevant, high-traffic websites.</p>
             </div>
 
             <div class="service-card">
-                <div class="service-icon">✏️</div>
+                <div class="service-icon"><i class="fas fa-edit"></i></div>
                 <h3>Niche Edits</h3>
                 <p>Contextual backlinks placed inside existing indexed articles for faster authority building.</p>
             </div>
 
             <div class="service-card">
-                <div class="service-icon">⚙️</div>
+                <div class="service-icon"><i class="fas fa-cog"></i></div>
                 <h3>Technical SEO</h3>
                 <p>Site speed, indexing, structure optimization. Foundation for better rankings and UX.</p>
             </div>
 
             <div class="service-card">
-                <div class="service-icon">📱</div>
+                <div class="service-icon"><i class="fas fa-chart-line"></i></div>
                 <h3>Digital Marketing</h3>
                 <p>Comprehensive digital strategies for maximum online visibility and brand awareness.</p>
             </div>
 
             <div class="service-card">
-                <div class="service-icon">📧</div>
+                <div class="service-icon"><i class="fas fa-envelope"></i></div>
                 <h3>Email Marketing</h3>
                 <p>Strategic email campaigns to build relationships and drive conversions from your audience.</p>
             </div>
@@ -867,7 +905,7 @@
                 </ul>
             </div>
             <div class="why-choose-image">
-                📈🎯🚀
+                📈
             </div>
         </div>
     </section>
@@ -897,10 +935,12 @@
                     <h4>Jeweller SEO</h4>
                     <p>Premium link building, guest posting, and complete SEO services for businesses worldwide.</p>
                     <div class="social-links">
-                        <a href="https://facebook.com/jewellerseo" target="_blank" title="Facebook">f</a>
-                        <a href="https://instagram.com/jewellerseo" target="_blank" title="Instagram">📷</a>
-                        <a href="https://linkedin.com/company/jewellerseo" target="_blank" title="LinkedIn">in</a>
-                        <a href="https://twitter.com/jewellerseo" target="_blank" title="Twitter">𝕏</a>
+                        <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/Nadeem_seo" target="_blank" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://t.me/Nadeemmayos" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.fiverr.com/nadeem_mayo" target="_blank" title="Fiverr"><i class="fab fa-fiverr"></i></a>
+                        <a href="https://upwork.com/freelancers/~01929269c0cf45d7c1" target="_blank" title="Upwork"><i class="fab fa-upwork"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -927,10 +967,10 @@
                     <h4>CONTACT</h4>
                     <p><strong>Nadeem Mayo</strong><br>CEO & Founder</p>
                     <p style="margin-top: 10px;">
-                        <a href="https://wa.me/923074646927" style="color: var(--accent);">WhatsApp: +92 307 4646927</a>
+                        <a href="https://wa.me/923074646927" style="color: var(--accent);"><i class="fab fa-whatsapp"></i> +92 307 4646927</a>
                     </p>
                     <p>
-                        <a href="mailto:nadeem@gmail.com" style="color: var(--accent);">Email: nadeem@gmail.com</a>
+                        <a href="mailto:nadeemonlin@gmail.com" style="color: var(--accent);"><i class="fas fa-envelope"></i> nadeemonlin@gmail.com</a>
                     </p>
                 </div>
             </div>
@@ -940,10 +980,17 @@
         </div>
     </footer>
 
-    <!-- Floating Buttons -->
-    <div class="floating-buttons">
-        <a href="https://wa.me/923074646927" class="float-btn float-whatsapp" title="Chat on WhatsApp">💬</a>
-        <a href="mailto:nadeem@gmail.com" class="float-btn float-email" title="Send Email">✉️</a>
+    <!-- Floating Contact Menu -->
+    <div class="floating-contact">
+        <div class="contact-options">
+            <a href="https://wa.me/923074646927" class="float-btn float-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:nadeemonlin@gmail.com" class="float-btn float-email" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" class="float-btn float-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" class="float-btn float-facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <button class="float-btn float-main" title="Contact Options">
+            <i class="fas fa-comments"></i>
+        </button>
     </div>
 
     <script>

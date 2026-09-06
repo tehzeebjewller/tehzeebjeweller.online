@@ -1,5 +1,4 @@
 ---
-# _layouts/post.html
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -7,18 +6,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>{{ page.title | escape }} | Jeweller SEO</title>
+<title>{{ page.title | escape }} | Tehzeeb Jeweler</title>
 
 <meta name="description" content="{{ page.description | default: page.title | escape }}">
-<meta name="author" content="Jeweller SEO">
+<meta name="author" content="Tehzeeb Jeweler">
 <meta name="robots" content="index, follow, max-image-preview:large">
 
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%231F3A93' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='65' font-size='50' font-weight='bold' fill='%23FFD700' text-anchor='middle'%3EJS%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%231F3A93' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='65' font-size='50' font-weight='bold' fill='%23FFD700' text-anchor='middle'%3ETJ%3C/text%3E%3C/svg%3E" type="image/svg+xml">
 
 <meta property="og:type" content="article">
-<meta property="og:site_name" content="Jeweller SEO">
+<meta property="og:site_name" content="Tehzeeb Jeweler">
 <meta property="og:title" content="{{ page.title | escape }}">
 <meta property="og:description" content="{{ page.description | default: page.title | escape }}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
@@ -26,7 +25,7 @@
 {% if page.thumbnail %}
 <meta property="og:image" content="{{ page.thumbnail | absolute_url }}">
 {% else %}
-<meta property="og:image" content="https://jewellerseo.online/preview.jpg">
+<meta property="og:image" content="https://tehzeebjeweler.online/preview.jpg">
 {% endif %}
 
 <meta name="twitter:card" content="summary_large_image">
@@ -36,7 +35,7 @@
 {% if page.thumbnail %}
 <meta name="twitter:image" content="{{ page.thumbnail | absolute_url }}">
 {% else %}
-<meta name="twitter:image" content="https://jewellerseo.online/preview.jpg">
+<meta name="twitter:image" content="https://tehzeebjeweler.online/preview.jpg">
 {% endif %}
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
@@ -98,6 +97,7 @@ h1, h2, h3, h4, .display {
 
 .article-hero {
   background: linear-gradient(135deg, #1a2d5c, #0d47a1);
+  padding: 80px 50px;
 }
 
 .article-container {
@@ -112,6 +112,7 @@ h1, h2, h3, h4, .display {
   border-radius: 12px;
   border: 2px solid #FFD700;
   box-shadow: 0 25px 60px rgba(0,0,0,.30);
+  margin-bottom: 48px;
 }
 
 .article-content {
@@ -197,25 +198,64 @@ h1, h2, h3, h4, .display {
   display: block;
 }
 
+nav {
+  background: rgba(31, 58, 147, 0.92);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.22);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 16px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: #e0e0e0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #FFD700;
+}
+
+footer {
+  background: linear-gradient(135deg, #1F3A93, #0D47A1);
+  padding: 40px 50px;
+  text-align: center;
+  color: #e0e0e0;
+  border-top: 2px solid #FFD700;
+}
+
 @media(max-width: 768px) {
-  .desktop-menu {
-    display: none !important;
-  }
-
-  .mobile-menu {
-    padding: 18px 24px;
-    background: #04262B;
-    border-top: 1px solid rgba(255, 215, 0, 0.22);
-  }
-
-  .mobile-menu a {
-    display: block;
-    padding: 12px 0;
-    color: #e0e0e0;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-bottom: 1px solid rgba(255, 215, 0, 0.14);
+  .nav-links {
+    display: none;
   }
 
   .article-content {
@@ -238,12 +278,12 @@ h1, h2, h3, h4, .display {
   "datePublished": "{{ page.date | date_to_xmlschema }}",
   "author": {
     "@type": "Organization",
-    "name": "Jeweller SEO"
+    "name": "Tehzeeb Jeweler"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Jeweller SEO",
-    "url": "https://jewellerseo.online/"
+    "name": "Tehzeeb Jeweler",
+    "url": "https://tehzeebjeweler.online/"
   }
 }
 </script>
@@ -252,158 +292,71 @@ h1, h2, h3, h4, .display {
 
 <body>
 
-<nav class="sticky top-0 z-50 backdrop-blur-xl border-b" style="background:rgba(31, 58, 147, 0.92); border-color:rgba(255, 215, 0, 0.22);">
-
-<div class="max-w-7xl mx-auto flex justify-between items-center p-4" style="max-width:1400px;margin:0 auto;padding:16px 50px;display:flex;justify-content:space-between;align-items:center;">
-
-<a href="{{ '/' | relative_url }}" class="text-2xl font-semibold flex items-center display silver-text" style="font-size:24px;font-weight:700;color:#e0e0e0;display:flex;align-items:center;gap:10px;text-decoration:none;">
-
-<span class="logo-mark">JS</span>
-
-Jeweller<span class="accent-text">SEO</span>
-
-</a>
-
-<div class="desktop-menu hidden md:flex gap-5 font-bold text-xs uppercase items-center tracking-wide" style="display:flex;gap:35px;list-style:none;">
-
-<a href="{{ '/' | relative_url }}" class="silver-text hover:text-[#FFD700] transition" style="text-decoration:none;color:#e0e0e0;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;transition:all 0.3s ease;">
-Home
-</a>
-
-<a href="{{ '/about.html' | relative_url }}" class="silver-text hover:text-[#FFD700] transition" style="text-decoration:none;color:#e0e0e0;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;transition:all 0.3s ease;">
-About
-</a>
-
-<a href="{{ '/services.html' | relative_url }}" class="silver-text hover:text-[#FFD700] transition" style="text-decoration:none;color:#e0e0e0;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;transition:all 0.3s ease;">
-Services
-</a>
-
-<a href="{{ '/blog.html' | relative_url }}" class="accent-text" style="text-decoration:none;color:#FFD700;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;">
-Blog
-</a>
-
-<a href="{{ '/contact.html' | relative_url }}" class="main-btn" style="text-decoration:none;">
-Contact
-</a>
-
-</div>
-
-<button class="mobile-menu-btn text-3xl md:hidden silver-text" type="button" aria-label="Open navigation menu" aria-expanded="false" style="display:none;flex-direction:column;cursor:pointer;gap:5px;color:#e0e0e0;background:none;border:none;font-size:24px;">
-
-<i class="fas fa-bars"></i>
-
-</button>
-
-</div>
-
-<div class="mobile-menu" style="display:none;">
-
-<a href="{{ '/' | relative_url }}" style="display:block;padding:12px 24px;color:#e0e0e0;font-size:13px;font-weight:700;text-transform:uppercase;border-bottom:1px solid rgba(255, 215, 0, 0.14);text-decoration:none;">Home</a>
-<a href="{{ '/about.html' | relative_url }}" style="display:block;padding:12px 24px;color:#e0e0e0;font-size:13px;font-weight:700;text-transform:uppercase;border-bottom:1px solid rgba(255, 215, 0, 0.14);text-decoration:none;">About</a>
-<a href="{{ '/services.html' | relative_url }}" style="display:block;padding:12px 24px;color:#e0e0e0;font-size:13px;font-weight:700;text-transform:uppercase;border-bottom:1px solid rgba(255, 215, 0, 0.14);text-decoration:none;">Services</a>
-<a href="{{ '/blog.html' | relative_url }}" class="accent-text" style="display:block;padding:12px 24px;color:#FFD700;font-size:13px;font-weight:700;text-transform:uppercase;border-bottom:1px solid rgba(255, 215, 0, 0.14);text-decoration:none;">Blog</a>
-<a href="{{ '/contact.html' | relative_url }}" style="display:block;padding:12px 24px;color:#e0e0e0;font-size:13px;font-weight:700;text-transform:uppercase;border-bottom:1px solid rgba(255, 215, 0, 0.14);text-decoration:none;">Contact</a>
-
-</div>
-
+<nav>
+  <div class="nav-container">
+    <a href="{{ '/' | relative_url }}" class="logo">
+      <span class="logo-mark">TJ</span>
+      <span>Tehzeeb<span class="accent-text">Jeweler</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
+      <li><a href="{{ '/services.html' | relative_url }}">Services</a></li>
+      <li><a href="{{ '/blog.html' | relative_url }}" class="accent-text">Blog</a></li>
+      <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
+    </ul>
+  </div>
 </nav>
 
-<section class="article-hero py-20 px-6" style="background:linear-gradient(135deg, #1a2d5c, #0d47a1);padding:80px 50px;">
-
-<div class="article-container text-center">
-
-{% if page.category %}
-<span class="category-pill">
-{{ page.category | escape }}
-</span>
-{% endif %}
-
-<h1 class="text-4xl md:text-6xl font-semibold leading-tight mt-6 mb-6 silver-text display" style="font-size:56px;font-weight:700;color:#e0e0e0;margin-top:24px;margin-bottom:24px;line-height:1.2;">
-{{ page.title | escape }}
-</h1>
-
-{% if page.description %}
-<p class="text-[#A9CFC9] text-lg md:text-xl max-w-3xl mx-auto leading-8" style="color:#b0b0b0;font-size:16px;max-width:700px;margin:0 auto;line-height:1.8;">
-{{ page.description | escape }}
-</p>
-{% endif %}
-
-<div class="mt-7 text-sm text-[#8DBCB5]" style="margin-top:28px;font-size:12px;color:#888;">
-
-{% if page.date %}
-<span>
-<i class="far fa-calendar mr-2"></i>
-{{ page.date | date: "%B %d, %Y" }}
-</span>
-{% endif %}
-
-</div>
-
-</div>
-
+<section class="article-hero">
+  <div class="article-container">
+    {% if page.category %}
+    <span class="category-pill">{{ page.category | escape }}</span>
+    {% endif %}
+    
+    <h1 style="font-size: 56px; font-weight: 700; color: #e0e0e0; margin-top: 24px; margin-bottom: 24px; line-height: 1.2;">
+      {{ page.title | escape }}
+    </h1>
+    
+    {% if page.description %}
+    <p style="color: #b0b0b0; font-size: 16px; max-width: 700px; margin: 0 auto; line-height: 1.8;">
+      {{ page.description | escape }}
+    </p>
+    {% endif %}
+    
+    <div style="margin-top: 28px; font-size: 12px; color: #888;">
+      {% if page.date %}
+      <span><i class="far fa-calendar"></i> {{ page.date | date: "%B %d, %Y" }}</span>
+      {% endif %}
+    </div>
+  </div>
 </section>
 
-<main class="py-14 px-6" style="padding:56px 50px;">
-
-<article class="article-container">
-
-{% if page.thumbnail and page.thumbnail != "" %}
-
-<img src="{{ page.thumbnail | relative_url }}" alt="{{ page.thumbnail_alt | default: page.title | escape }}" class="article-image mb-12" style="margin-bottom:48px;">
-
-{% endif %}
-
-<div class="article-content">
-{{ content }}
-</div>
-
-<div class="mt-14 pt-8 border-t" style="margin-top:56px;padding-top:32px;border-top:1px solid rgba(255, 215, 0, 0.18);">
-
-<a href="{{ '/blog.html' | relative_url }}" class="main-btn" style="text-decoration:none;">
-
-<i class="fas fa-arrow-left"></i>
-Back To Blog
-
-</a>
-
-</div>
-
-</article>
-
+<main style="padding: 56px 50px;">
+  <article class="article-container">
+    {% if page.thumbnail %}
+    <img src="{{ page.thumbnail | relative_url }}" alt="{{ page.thumbnail_alt | default: page.title | escape }}" class="article-image">
+    {% endif %}
+    
+    <div class="article-content">
+      {{ content }}
+    </div>
+    
+    <div style="margin-top: 56px; padding-top: 32px; border-top: 1px solid rgba(255, 215, 0, 0.18);">
+      <a href="{{ '/blog.html' | relative_url }}" class="main-btn">
+        <i class="fas fa-arrow-left"></i> Back To Blog
+      </a>
+    </div>
+  </article>
 </main>
 
-<footer class="pt-12 pb-8 px-6 text-center" style="background:linear-gradient(135deg, #1F3A93, #0D47A1);padding:40px 50px;text-align:center;color:#e0e0e0;border-top:2px solid #FFD700;">
-
-<h3 class="text-2xl font-semibold mb-3 display silver-text" style="font-size:24px;font-weight:700;margin-bottom:12px;color:#e0e0e0;">
-Jeweller<span class="accent-text">SEO</span>
-</h3>
-
-<p class="text-[#A9CFC9]" style="color:#b0b0b0;">
-Premium Link Building • Guest Posting • Niche Edits • White-Hat SEO
-</p>
-
-<p class="text-[#6FA69F] text-sm mt-6" style="color:#888;font-size:12px;margin-top:24px;">
-© 2026 Jeweller SEO. All Rights Reserved.
-</p>
-
+<footer>
+  <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 12px; color: #e0e0e0;">
+    Tehzeeb<span class="accent-text">Jeweler</span>
+  </h3>
+  <p style="color: #b0b0b0;">Premium Jewelry • Gemstones • Luxury Collections</p>
+  <p style="color: #888; font-size: 12px; margin-top: 24px;">© 2026 Tehzeeb Jeweler. All Rights Reserved.</p>
 </footer>
-
-<script>
-const menuBtn = document.querySelector(".mobile-menu-btn");
-const mobileMenu = document.querySelector(".mobile-menu");
-
-if(menuBtn && mobileMenu) {
-  menuBtn.addEventListener("click", function(){
-    mobileMenu.classList.toggle("active");
-    const isOpen = mobileMenu.classList.contains("active");
-    menuBtn.setAttribute("aria-expanded", String(isOpen));
-    const icon = menuBtn.querySelector("i");
-    if(icon) {
-      icon.className = isOpen ? "fas fa-xmark" : "fas fa-bars";
-    }
-  });
-}
-</script>
 
 </body>
 </html>

@@ -1,0 +1,12 @@
+---
+# _config.yml - Jeweller SEO Jekyll Configuration
+title: Jeweller SEO
+url: "https://jewellerseo.online"
+baseurl: ""
+
+markdown: kramdown
+
+permalink: /blog/:title/
+
+exclude:
+  - README.md

@@ -1,0 +1,96 @@
+---
+# admin/config.yml - Jeweller SEO CMS Configuration
+---
+backend:
+  name: github
+  repo: Nadeemmayo/jewellerseo.online
+  branch: main
+  base_url: https://jewellerseo-cms-auth.seoinfo89.workers.dev
+  auth_endpoint: auth
+
+site_url: https://jewellerseo.online
+display_url: https://jewellerseo.online
+logo_url: https://jewellerseo.online/favicon.ico
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "post"
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Author"
+        name: "author"
+        widget: "string"
+        default: "Jeweller SEO Team"
+
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Link Building"
+          - "Guest Posting"
+          - "Niche Edits"
+          - "White-Hat SEO"
+          - "Authority Building"
+          - "Backlink Strategy"
+          - "Enterprise SEO"
+          - "Digital Marketing"
+          - "SEO Audit"
+
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+
+      - label: "Short Description"
+        name: "description"
+        widget: "text"
+
+      - label: "Meta Title"
+        name: "meta_title"
+        widget: "string"
+
+      - label: "Meta Description"
+        name: "meta_description"
+        widget: "text"
+
+      - label: "Focus Keyword"
+        name: "focus_keyword"
+        widget: "string"
+        required: false
+
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        required: false
+
+      - label: "Featured Image Alt Text"
+        name: "thumbnail_alt"
+        widget: "string"
+        required: false
+
+      - label: "Article Content"
+        name: "body"
+        widget: "markdown"

@@ -1,11 +1,11 @@
 backend:
   name: github
-  repo: Nadeemmayo/tehzeebjeweler.online
+  repo: tehzeebjewller/tehzeebjeweller.online
   branch: main
 
-site_url: https://tehzeebjeweler.online
-display_url: https://tehzeebjeweler.online
-logo_url: https://tehzeebjeweler.online/favicon.ico
+site_url: https://tehzeebjeweller.online
+display_url: https://tehzeebjeweller.online
+logo_url: https://tehzeebjeweller.online/favicon.ico
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -38,7 +38,7 @@ collections:
       - label: "Author"
         name: "author"
         widget: "string"
-        default: "Tehzeeb Jeweler Team"
+        default: "Tehzeeb Jeweller Team"
 
       - label: "Category"
         name: "category"

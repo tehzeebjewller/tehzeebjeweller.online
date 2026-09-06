@@ -1,7 +1,5 @@
----
-# _config.yml - Jeweller SEO Jekyll Configuration
-title: Jeweller SEO
-url: "https://jewellerseo.online"
+title: Tehzeeb Jeweler
+url: "https://tehzeebjeweler.online"
 baseurl: ""
 
 markdown: kramdown

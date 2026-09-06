@@ -1,16 +1,13 @@
----
-# admin/config.yml - Jeweller SEO CMS Configuration
----
 backend:
   name: github
-  repo: Nadeemmayo/jewellerseo.online
+  repo: Nadeemmayo/tehzeebjeweler.online
   branch: main
-  base_url: https://jewellerseo-cms-auth.seoinfo89.workers.dev
+  base_url: https://tehzeebjeweler-cms-auth.seoinfo89.workers.dev
   auth_endpoint: auth
 
-site_url: https://jewellerseo.online
-display_url: https://jewellerseo.online
-logo_url: https://jewellerseo.online/favicon.ico
+site_url: https://tehzeebjeweler.online
+display_url: https://tehzeebjeweler.online
+logo_url: https://tehzeebjeweler.online/favicon.ico
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -43,21 +40,20 @@ collections:
       - label: "Author"
         name: "author"
         widget: "string"
-        default: "Jeweller SEO Team"
+        default: "Tehzeeb Jeweler Team"
 
       - label: "Category"
         name: "category"
         widget: "select"
         options:
-          - "Link Building"
-          - "Guest Posting"
-          - "Niche Edits"
-          - "White-Hat SEO"
-          - "Authority Building"
-          - "Backlink Strategy"
-          - "Enterprise SEO"
-          - "Digital Marketing"
-          - "SEO Audit"
+          - "Jewelry Design"
+          - "Gemstones"
+          - "Collections"
+          - "Jewelry Care"
+          - "Trends"
+          - "Craftsmanship"
+          - "Gold & Silver"
+          - "Diamond Guide"
 
       - label: "Tags"
         name: "tags"

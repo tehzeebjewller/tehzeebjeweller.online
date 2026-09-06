@@ -2,8 +2,6 @@ backend:
   name: github
   repo: Nadeemmayo/tehzeebjeweler.online
   branch: main
-  base_url: https://tehzeebjeweler-cms-auth.seoinfo89.workers.dev
-  auth_endpoint: auth
 
 site_url: https://tehzeebjeweler.online
 display_url: https://tehzeebjeweler.online

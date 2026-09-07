@@ -56,12 +56,12 @@ nav{
 .container{max-width:1200px;margin:0 auto;padding:60px 40px;}
 
 .contact-cards{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:30px;margin-bottom:60px;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:25px;margin-bottom:60px;
 }
 .contact-card{
   background:linear-gradient(135deg,#1a2d5c,#0d47a1);
-  border-radius:10px;padding:40px;border:1px solid rgba(255,215,0,0.1);
+  border-radius:10px;padding:35px 25px;border:1px solid rgba(255,215,0,0.1);
   text-align:center;transition:all .35s ease;
 }
 .contact-card:hover{
@@ -69,15 +69,16 @@ nav{
   box-shadow:0 12px 35px rgba(255,215,0,0.2);
   border-color:#FFD700;
 }
-.contact-icon{font-size:50px;color:#FFD700;margin-bottom:20px;}
-.contact-card h3{font-family:'Playfair Display',serif;font-size:24px;color:#e0e0e0;margin-bottom:15px;font-weight:700;}
-.contact-card p{font-size:14px;color:#b0b0b0;line-height:1.8;margin-bottom:15px;}
+.contact-icon{font-size:42px;color:#FFD700;margin-bottom:18px;}
+.contact-card h3{font-family:'Playfair Display',serif;font-size:21px;color:#e0e0e0;margin-bottom:12px;font-weight:700;}
+.contact-card p{font-size:13px;color:#b0b0b0;line-height:1.7;margin-bottom:14px;}
 .contact-card a{color:#FFD700;text-decoration:none;font-weight:700;font-size:13px;transition:all .3s ease;}
 .contact-card a:hover{color:#ffc700;}
 
 .contact-form-section{
   background:linear-gradient(135deg,#1a2d5c,#0d47a1);
   border-radius:10px;padding:50px;border:1px solid rgba(255,215,0,0.1);
+  margin-bottom:60px;
 }
 .contact-form-section h2{font-family:'Playfair Display',serif;font-size:40px;color:#e0e0e0;margin-bottom:30px;font-weight:700;}
 
@@ -101,10 +102,53 @@ nav{
 }
 .submit-btn:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(255,215,0,0.4);}
 
+.social-section{
+  text-align:center;padding-top:20px;
+}
+.social-section h3{
+  font-family:'Playfair Display',serif;font-size:26px;color:#e0e0e0;
+  margin-bottom:20px;font-weight:700;
+}
+.social-links{
+  display:flex;gap:15px;justify-content:center;flex-wrap:wrap;
+}
+.social-links a{
+  width:52px;height:52px;border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  color:#0a0e27;text-decoration:none;font-size:20px;
+  background:linear-gradient(135deg,#FFD700,#ffc700);
+  transition:all .3s ease;
+}
+.social-links a:hover{transform:translateY(-4px) scale(1.05);box-shadow:0 8px 20px rgba(255,215,0,0.35);}
+
+/* Floating Contact */
+.floating-contact{position:fixed;right:30px;bottom:30px;z-index:99;}
+.contact-options{
+  display:none;flex-direction:column;gap:12px;margin-bottom:15px;
+  animation:slideUp .3s ease;
+}
+@keyframes slideUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.floating-contact:hover .contact-options{display:flex;}
+.float-btn{
+  width:55px;height:55px;border-radius:5px;
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;text-decoration:none;font-size:20px;transition:all .3s ease;
+  box-shadow:0 4px 15px rgba(0,0,0,0.4);
+  border:1px solid rgba(255,215,0,0.2);
+}
+.float-btn:hover{transform:scale(1.1);}
+.float-whatsapp{background:#25D366;}
+.float-email{background:#FF6B6B;}
+.float-linkedin{background:#0077B5;}
+.float-facebook{background:#1877F2;}
+.float-main{
+  background:linear-gradient(135deg,#FFD700,#ffc700);
+  color:#0a0e27;width:65px;height:65px;font-size:24px;
+}
+
 @media(max-width:768px){
   .nav-links{display:none;}
   .hero h1{font-size:36px;}
-  .contact-cards{grid-template-columns:1fr;}
   .form-row{grid-template-columns:1fr;}
   .contact-form-section{padding:30px;}
 }
@@ -139,19 +183,25 @@ nav{
       <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
       <h3>WhatsApp</h3>
       <p>Quick response for inquiries and consultations.</p>
-      <a href="#" target="_blank">Message us</a>
+      <a href="https://wa.me/923074646927" target="_blank">+92 307 4646927</a>
     </div>
     <div class="contact-card">
       <div class="contact-icon"><i class="fas fa-envelope"></i></div>
       <h3>Email</h3>
       <p>Detailed inquiries and custom order requests.</p>
-      <a href="#">Send an email</a>
+      <a href="mailto:nadeemonlin@gmail.com">nadeemonlin@gmail.com</a>
     </div>
     <div class="contact-card">
-      <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-      <h3>Visit Us</h3>
-      <p>Come see our collections in person.</p>
-      <a href="#">Get directions</a>
+      <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+      <h3>LinkedIn</h3>
+      <p>Professional networking and partnership opportunities.</p>
+      <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank">Connect with us</a>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon"><i class="fab fa-facebook-f"></i></div>
+      <h3>Facebook</h3>
+      <p>Follow our latest collections and updates.</p>
+      <a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank">Follow us</a>
     </div>
   </section>
 
@@ -192,6 +242,31 @@ nav{
       <button type="submit" class="submit-btn">SEND MESSAGE</button>
     </form>
   </section>
+
+  <section class="social-section">
+    <h3>Follow <span class="accent-text">Tehzeeb Jeweller</span></h3>
+    <div class="social-links">
+      <a href="https://wa.me/923074646927" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:nadeemonlin@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/Nadeem_seo" target="_blank" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://t.me/Nadeemmayos" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+    </div>
+  </section>
+</div>
+
+<!-- Floating Contact -->
+<div class="floating-contact">
+  <div class="contact-options">
+    <a href="https://wa.me/923074646927" class="float-btn float-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="mailto:nadeemonlin@gmail.com" class="float-btn float-email" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" class="float-btn float-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" class="float-btn float-facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+  </div>
+  <button class="float-btn float-main" title="Contact Options">
+    <i class="fas fa-comments"></i>
+  </button>
 </div>
 
 <script>
